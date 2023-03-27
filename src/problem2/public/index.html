@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fancy Form</title>
+
+  <!-- You may add more stuff here -->
+  <link href="output-style.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-slate-900">
+  <div class="box">
+    <div><img src="./donut.png"></div>
+    <div><img src="./donut.png"></div>
+    <div><img src="./donut.png"></div>
+    <div><img src="./donut.png"></div>
+    <div><img src="./donut.png"></div>
+    <div><img src="./donut.png"></div>
+    <div><img src="./donut.png"></div>
+    <div><img src="./donut.png"></div>
+    <div><img src="./donut.png"></div>
+    <div><img src="./donut.png"></div>
+  </div>
+  <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
+  <form class="h-screen flex items-center justify-center" onsubmit="return !1">
+    <div class="group">
+      <label class="mx-2 text-sky-400/75 font-semibold group-focus-within:text-pink-400" for="input-address">ETH Address</label>
+    <input class="peer mx-2 bg-slate-900 border-2 border-sky-400 rounded-md text-sky-400 focus:text-pink-400 focus:outline-none focus:border-pink-400" id="input-address" />
+    </div>
+    
+    <div class="group">
+      <label class="mx-2 text-sky-400/75 font-semibold group-focus-within:text-pink-400" for="input-amount">Amount to send</label>
+      <input class="mx-2 bg-slate-900 border-2 border-sky-400 rounded-md text-sky-400 focus:text-pink-400 focus:outline-none focus:border-pink-400"" id="input-amount" />
+    </div>
+    
+    <div class="group">
+      <label class="mx-2 text-sky-400/75 font-semibold group-focus-within:text-pink-400" for="input-otp">OTP Authentication</label>
+    <input class="mx-2 bg-slate-900 border-2 border-sky-400 rounded-md text-sky-400 focus:text-pink-400 focus:outline-none focus:border-pink-400"" type="number" id="input-otp" />
+    </div>
+    
+
+    <button class="bg-sky-400 rounded-full p-2 text-white hover:bg-sky-700">SEND TOKENS</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
